@@ -16,16 +16,15 @@ public class Funcionario {
         }
 
         System.out.println("---Média salário---");
-        mediaSalario(this.variosSalarios);
+        mediaSalary(this.variosSalarios);
 
     }
 
-    public void mediaSalario(double... salarios){
+    public void mediaSalary(double... salarios){
         if (salarios == null){
             return;
         }
         double somaSalario = 0;
-
 
         for(double salario: salarios){
             somaSalario += salario;
@@ -35,11 +34,31 @@ public class Funcionario {
         System.out.println(String.format("%.2f", mediaSalario));
     }
 
-    public double getMediaSalario() {
+    public double getMediaSalary() {
         return mediaSalario;
     }
 
-    public void setMediaSalario(double mediaSalario) {
-        this.mediaSalario = mediaSalario;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double[] getVariosSalarios() {
+        return variosSalarios;
+    }
+
+    public void setVariosSalarios(double[] variosSalarios) {
+        this.variosSalarios = variosSalarios;
     }
 }
