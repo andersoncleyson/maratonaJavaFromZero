@@ -5,6 +5,13 @@ public class Professor {
     private String especialidade;
     private Seminario[] seminarios;
 
+    public Professor(){}
+
+    public Professor(String nome, String especialidade){
+        this.nome = nome;
+        this.especialidade = especialidade;
+    }
+
     public Professor(String nome, String especialidade, Seminario[] seminarios) {
         this.nome = nome;
         this.especialidade = especialidade;
@@ -12,7 +19,11 @@ public class Professor {
     }
 
     public void imprimeSeminarios(){
+        if(this.seminarios == null){
+            return;
+        }
         System.out.println("Seminários: ");
+
         for(Seminario seminario: seminarios){
             System.out.println(seminario.getTitulo());
         }

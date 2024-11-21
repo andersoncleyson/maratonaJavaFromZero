@@ -24,8 +24,10 @@ public class ExercicioAssociacao {
 
         System.out.println("Seminário: " + seminario1.getTitulo());
         seminario1.imprimeLocal();
+        System.out.println("--------------------");
         System.out.println("Professor: " + professor.getNome() + " - Especialidade: " + professor.getEspecialidade());
         professor.imprimeSeminarios();
+        System.out.println("====================");
         System.out.println("Alunos:");
         seminario1.imprimeAlunos();
 
