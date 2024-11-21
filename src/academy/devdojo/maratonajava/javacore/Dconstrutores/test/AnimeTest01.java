@@ -1,19 +1,11 @@
-package academy.devdojo.maratonajava.javacore.Csobrecargametodos.test;
+package academy.devdojo.maratonajava.javacore.Dconstrutores.test;
 
-import academy.devdojo.maratonajava.javacore.Csobrecargametodos.dominio.Anime;
+import academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args){
-        Anime anime = new Anime();
-        anime.setNome("Naruto");
-        anime.setTipo("TV");
-        anime.setEpisodios(500);
-
+        Anime anime = new Anime("Naruto", "TV", 455, "Shonin");
         anime.imprime();
 
-        anime.init("Dragon Ball", "Tv", 200, "Ação");
-
-
-        anime.imprime();
     }
 }
