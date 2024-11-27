@@ -1,18 +1,15 @@
-package academy.devdojo.maratonajava.javacore.Isobrescrita.dominio;
+package academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio;
 
-public class Anime {
+public class Comprador {
     private String nome;
 
     @Override
-    public String toString(){
-        return "Anime: {" +
+    public String toString() {
+        return "Comprador{" +
                 "nome='" + nome + '\'' +
                 '}';
     }
 
-    public Anime(String nome){
-        this.nome = nome;
-    }
     public String getNome() {
         return nome;
     }
