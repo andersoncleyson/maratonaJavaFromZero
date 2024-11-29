@@ -9,6 +9,11 @@ public class Gerente extends Funcionario{
                 '}';
     }
 
+    @Override
+    public void calculaBonus() {
+        this.salario = this.salario + this.salario * 0.01;
+    }
+
     public Gerente(String nome, double salario){
         super(nome, salario);
 
