@@ -20,7 +20,7 @@ public class AnonymousClassesTest02 {
         barcoList.sort(new Comparator<Barco>() {
             @Override
             public int compare(Barco o1, Barco o2) {
-                return o1.getNome().compareTo(o2.getNome());*+
+                return o1.getNome().compareTo(o2.getNome());
             }
         });
         System.out.println(barcoList);
