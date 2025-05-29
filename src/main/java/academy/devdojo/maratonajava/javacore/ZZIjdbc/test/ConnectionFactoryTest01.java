@@ -5,7 +5,7 @@ import academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.ProducerReposito
 
 public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
-        Producer producer = Producer.ProducerBuilder.aProducer().name("Death Note").build();
+        Producer producer = Producer.builder().name("Dragon Ball Z").build();
         ProducerRepository.save(producer);
     }
 }
