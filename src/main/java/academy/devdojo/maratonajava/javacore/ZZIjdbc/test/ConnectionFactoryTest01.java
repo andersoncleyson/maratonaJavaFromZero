@@ -20,7 +20,9 @@ public class ConnectionFactoryTest01 {
         //List<Producer> producers = ProducerService.findAll();
         //log.info("Producers found {}", producers);
 
-        List<Producer> producers = ProducerService.findAll();
-        log.info("Producers found '{}'", producers);
+        //List<Producer> producers = ProducerService.findAll();
+        //log.info("Producers found '{}'", producers);
+
+        ProducerService.showProducerMetaData();
     }
 }
