@@ -12,11 +12,15 @@ public class ConnectionFactoryTest01 {
     private static final Logger log = LogManager.getLogger(ConnectionFactoryTest01.class);
 
     public static void main(String[] args) {
-        Producer producer = Producer.builder().name("Dragon Ball Z").build();
+        Producer producer = Producer.builder().name("Cavaleiros dos Zodíacos").build();
+        //ProducerRepository.save(producer);
         //Producer producerToUpdate = Producer.builder().id(5).name("Sant Seiya").build();
         //ProducerService.save(producer);
         //ProducerService.update(producerToUpdate);
+        //List<Producer> producers = ProducerService.findAll();
+        //log.info("Producers found {}", producers);
+
         List<Producer> producers = ProducerService.findAll();
-        log.info("Producers found {}", producers);
+        log.info("Producers found '{}'", producers);
     }
 }
