@@ -35,6 +35,7 @@ public class CompletableFutureTest05 {
         System.out.printf("Time passed to searchPriceSync %dms%n", (end - start));
 
 
+
     }
 
 
