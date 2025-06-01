@@ -17,12 +17,13 @@ public class ConnectionFactoryTest01 {
         //Producer producerToUpdate = Producer.builder().id(5).name("Sant Seiya").build();
         //ProducerService.save(producer);
         //ProducerService.update(producerToUpdate);
-        //List<Producer> producers = ProducerService.findAll();
+        //List <Producer> producers = ProducerService.findAll();
         //log.info("Producers found {}", producers);
 
         //List<Producer> producers = ProducerService.findAll();
         //log.info("Producers found '{}'", producers);
 
-        ProducerService.showProducerMetaData();
+        //ProducerService.showProducerMetaData();
+        ProducerService.showDriverMetaData();
     }
 }
