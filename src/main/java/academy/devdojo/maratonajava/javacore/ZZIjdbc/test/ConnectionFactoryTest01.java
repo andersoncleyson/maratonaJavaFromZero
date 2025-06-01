@@ -24,6 +24,7 @@ public class ConnectionFactoryTest01 {
         //log.info("Producers found '{}'", producers);
 
         //ProducerService.showProducerMetaData();
-        ProducerService.showDriverMetaData();
+        //ProducerService.showDriverMetaData();
+        ProducerService.showTypeScrollWorking();
     }
 }
