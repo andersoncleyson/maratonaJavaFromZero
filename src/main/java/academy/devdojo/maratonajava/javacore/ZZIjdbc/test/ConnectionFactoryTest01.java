@@ -25,6 +25,8 @@ public class ConnectionFactoryTest01 {
 
         //ProducerService.showProducerMetaData();
         //ProducerService.showDriverMetaData();
-        ProducerService.showTypeScrollWorking();
+        //ProducerService.showTypeScrollWorking();
+        List<Producer> producers = ProducerService.findByNameAndUpdateToUpperCase("Naruto");
+        log.info("Producers found '{}'", producers);
     }
 }

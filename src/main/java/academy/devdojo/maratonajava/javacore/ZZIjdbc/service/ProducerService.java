@@ -41,6 +41,10 @@ public class ProducerService {
         ProducerRepository.showTypeScrollWorking();
     }
 
+    public static List<Producer> findByNameAndUpdateToUpperCase(String name){
+        return ProducerRepository.findByNameAndUpdateToUpperCase(name);
+    }
+
 
     private static void requiredValidId(Integer id){
         if (id == null || id <= 0){
