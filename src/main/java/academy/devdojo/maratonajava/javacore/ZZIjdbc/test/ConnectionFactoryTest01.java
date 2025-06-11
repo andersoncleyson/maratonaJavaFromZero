@@ -35,5 +35,6 @@ public class ConnectionFactoryTest01 {
         //ProducerService.updatePreparedStatement(producerToUpdate);
         List<Producer> producers = ProducerService.findByNameCallableStatement("naruto");
         log.info("Producers found '{}'", producers);
+
     }
 }
